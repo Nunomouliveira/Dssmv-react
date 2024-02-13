@@ -1,0 +1,18 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title UC03 - Editar uma Biblioteca
+autonumber
+
+actor User as User #6495ED
+participant System as System #6495ED
+
+User -> System: Seleciona a Biblioteca que pretende editar
+System -> System: Solicita à API a Biblioteca que foi selecionada
+System --> User: retorna a Biblioteca com os seus atributos previamente definidos
+User-> System: Edita os atributos que pretende
+System --> System: Solicita à API para guardar os atributos da Biblioteca
+System --> User: Retorna a lista de todas as Bibliotecas atualizadas
+
+
+@enduml

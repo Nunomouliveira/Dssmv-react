@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+
+actor User as User #6495ED
+
+usecase "UC01 - Criar uma Biblioteca" as UC01 #6495ED
+usecase "UC02 - Ver todas as Bibliotecas existentes" as UC02 #6495ED
+usecase "UC03 - Editar uma Biblioteca" as UC03 #6495ED
+usecase "UC04 - Eliminar uma Biblioteca" as UC04 #6495ED
+usecase "UC05 - Ver todos os Livros de uma Biblioteca" as UC05 #6495ED
+usecase "UC06 - Adiconar um novo Livro a uma Biblioteca" as UC06 #6495ED
+usecase "UC07 - Editar um Livro" as UC07 #6495ED
+
+
+User --> UC01
+User --> UC02
+User --> UC03
+User --> UC04
+User --> UC05
+User --> UC06
+User --> UC07
+
+
+
+
+
+
+
+
+
+
+
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title UC04 - Eliminar uma Biblioteca
+autonumber
+
+actor User as User #6495ED
+participant System as System #6495ED
+
+User -> System: Seleciona a Biblioteca que pretende eliminar
+System -> System: Solicita à API para eliminar a Biblioteca selecionada
+System --> User: retorna uma mensagem de sucesso
+
+
+@enduml

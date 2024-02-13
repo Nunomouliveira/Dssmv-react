@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title UC02 - Ver todas as Bibliotecas existentes
+autonumber
+
+actor User as User #6495ED
+participant System as System #6495ED
+
+User -> System: Pede a lista de todas as bibliotecas
+System -> System: Solicita à API a listas de todas as bibliotecas
+System --> User: retorna lista de todas as bibliotecas
+
+
+@enduml

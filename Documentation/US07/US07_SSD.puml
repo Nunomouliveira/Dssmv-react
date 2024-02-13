@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title UC07 - Editar um Livro
+autonumber
+
+actor User as User #6495ED
+participant System as System #6495ED
+
+User -> System: Seleciona uma Biblioteca
+System --> User: retorna lista de Livros da Biblioteca selecionada
+User -> System: Seleciona um Livro
+System --> User: Retorna o Livro com os atributos do mesmo
+User -> System: Edita os atributos que pretende (ex.:stock)
+System --> System: Solicita à API para guardar os atributos do Livro selecionado
+System --> User: Retorna a lista de Livros da Biblioteca selecionada, com o Livro selecionado atualizado
+
+
+@enduml

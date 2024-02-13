@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title UC05 - Ver todos os Livros de uma Biblioteca
+autonumber
+
+actor User as User #6495ED
+participant System as System #6495ED
+
+User -> System: Seleciona a Biblioteca que pretende ver a lista de Livros
+System -> System: Solicita à API a lista de Livros da Biblioteca selecionada
+System --> User: retorna lista de Livros 
+
+
+@enduml

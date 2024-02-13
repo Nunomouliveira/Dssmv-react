@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title UC01 - Criar uma Biblioteca
+autonumber
+
+actor User as User #6495ED
+participant System as System #6495ED
+
+User -> System: Passa os atributos da nova biblioteca
+System -> System: Solicita à API para criar a biblioteca
+System --> User: retorna lista de bibliotecas
+
+
+@enduml
